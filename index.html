@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/script.js"></script>
+
     <title>Main Page</title>
 </head>
 
@@ -14,38 +14,64 @@
 
     <!-- <div><h1>Welcome back!</h1></div> -->
     <!-- <center> -->
-        <div class="grid-container">
 
-            <a href="login.html"> <div title="Sign in to your account" id="zoom" class="grid-item">
-                    <i class="fa fa-sign-in"></i>
-                </div></a>
-                <br>
+    <div class="grid-container">
+        <a href="login.html" class="not-authorized" style="text-transform: none;">
+            <div title="Sign in to your account" id="zoom" class="grid-item">
+                <i class="fa fa-sign-in"></i>
+                <p>Sign in to your account</p>
+            </div>
+        </a>
+        <br>
 
-            <a href="register.html"> <div title="Sign up to your account" id="zoom" class="grid-item">
-                    <i class="fa fa-sign-out"></i>
-                </div></a>
-                <br>
+        <a href="register.html" class="not-authorized">
+            <div title="Sign up to your account" id="zoom" class="grid-item">
+                <i class="fa fa-sign-out"></i>
+                <p>Sign up to your account</p>
+            </div>
+        </a>
+        <br>
 
-           <a href="#"> <div title="View all files" id="zoom" class="grid-item">
+        <a href="viewfiles.html" class="auth">
+            <div title="View all files" id="zoom" class="grid-item">
                 <i class="fa fa-user"></i>
-            </div></a>
-            <br>
-            <a href="#"> <div title="Create new group" id="zoom" class="grid-item">
+                <p>View all files</p>
+            </div>
+        </a>
+        <br>
+        <a href="creategroup.html" class="auth">
+            <div title="Create new group" id="zoom" class="grid-item">
                 <i class="fa fa-folder"></i>
-            </div></a>
-            <br>
-            <a href="search.html"><div onclick="openSearch()" title="Search users" id="zoom" class="grid-item">
+                <p>Create new group</p>
+            </div>
+        </a>
+        <br>
+        <a href="search.html" class="auth">
+            <div onclick="openSearch()" title="Search users" id="zoom" class="grid-item">
                 <i class="fa fa-search"></i>
-                </div></a>
-            <br>
-            <a href="changepassword.html"><div title="Change your Password here" id="zoom" class="grid-item">
+                <p>Search users</p>
+            </div>
+        </a>
+        <br>
+        <a href="changepassword.html" class="auth">
+            <div title="Change your Password here" id="zoom" class="grid-item">
                 <i class="fa fa-edit"></i>
-            </div></a>
-            <br>
-        </div>
+                <p>Change your Password here</p>
+            </div>
+        </a>
+        <br />
+        <a href="" class="auth" onclick="signOut()">
+            <div title="Sign out" id="zoom" class="grid-item">
+                <i class="fa fa-sign-out"></i>
+                <p>Sign out</p>
+            </div>
+        </a>
+        <br>
+        <!-- </span> -->
+    </div>
 
-        
     <!-- </center> -->
+    <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/script.js"></script>
     <title>Create Group</title>
-    
+
 </head>
 
 <body>
@@ -19,15 +19,19 @@
     <!-- <center> -->
     <label for="id">
         <b>Insert name of group</b>
-        <button><i class="fa fa-check-circle"></i></button>
+        <button onclick="add()">
+            <i class="fa fa-check-circle"></i>
+        </button>
     </label>
     <input type="text" id="coursename" name="id" placeholder="Identify your group by name, or course name" required>
 
 
     <label>Add users
-        <button type="button" onclick="addUser()"><i class="fa fa-plus-circle"></i></button>
+        <button type="button" onclick="addUser()">
+            <i class="fa fa-plus-circle"></i>
+        </button>
     </label>
-    <input type="text" id="uname" name="uname" placeholder= "Insert username" required>
+    <input type="text" id="uname" name="uname" placeholder="Insert username" required>
 
     <label>Share Files with users
     </label>
@@ -38,8 +42,6 @@
         <input type="text" class="form-control p-4" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
     </div> -->
     <!-- <button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-primary">Primary</button> -->
-
-   
 
 </body>
 
